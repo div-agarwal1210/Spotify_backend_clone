@@ -11,11 +11,11 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 require("dotenv").config();
-const port =8000;  5
+const port =8000;  
 
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://Div_Ag:"+process.env.Mongo_Password+"@cluster0.qkqygbe.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://Div_Ag:"+process.env.Mongo_Password+"@cluster0.qkqygbe.mongodb.net/test?retryWrites=true&w=majority")
 .then((x)=>{
     console.log("Connected To Mongo");
 })
