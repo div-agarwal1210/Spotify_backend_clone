@@ -20,7 +20,7 @@ mongoose.connect("mongodb+srv://Div_Ag:"+process.env.Mongo_Password+"@cluster0.q
     console.log("Connected To Mongo");
 })
 .catch((err)=>{
-    console.log("Error while connecting to mongo");
+    console.log("Error while connecting to mongo",err);
 });
 
 // passport-jwt
