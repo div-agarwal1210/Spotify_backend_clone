@@ -15,7 +15,7 @@ const port =8000;
 
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://Div_Ag:"+process.env.Mongo_Password+"@cluster0.qkqygbe.mongodb.net/spotify_data?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://Div_Ag:"+process.env.Mongo_Password+"@cluster0.qkqygbe.mongodb.net/cluster0?retryWrites=true&w=majority")
 .then((x)=>{
     console.log("Connected To Mongo");
 })
