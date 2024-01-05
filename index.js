@@ -15,7 +15,7 @@ const port =8000;
 
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://Div_Ag:"+process.env.Mongo_Password+"@cluster0.qkqygbe.mongodb.net/test?retryWrites=true&w=majority")
+mongoose.connect(process.env.MONGO_URI)
 .then((x)=>{
     console.log("Connected To Mongo");
 })
